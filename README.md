@@ -205,6 +205,7 @@ is_special_day, vehicle_type_weight,
  (delta * is_special_day) + \
  (epsilon * vehicle_type_weight)
  return demand
+
  def normalize_demand(demand, min_demand, max_demand):
 
  # Simple min-max normalization
@@ -379,7 +380,7 @@ embeds. This allows for inclusion in a final report or presentation.
 
 ## Live Visualization
 
-Access the live Bokeh dashboard at the provided URL when running locally or in Colab with Panel:
+Access the live Bokeh dashboard in Colab with Panel:
 
 ```
 pn.Column(viz).servable()
@@ -393,5 +394,4 @@ pw.run()
 * [ ] Reproducibility: Notebook runs end-to-end without errors.
 * [ ] Clarity: Code comments and README explanations are concise.
 * [ ] Stability: Streaming pipeline runs smoothly.
-      
 * [ ] Visual Explainability: Bokeh plots clearly show pricing dynamics.
